@@ -194,8 +194,8 @@ public class TeamScreen extends Screen {
         for (Net.Inv inv : st.invites()) {
             if (shown++ == 3) break;
             fill(g, ox + 8, y, ox + W - 8, y + ROW - 2, 8, 0xFF000000 | ROW_BG);
-            text(g, font.plainSubstrByWidth(inv.teamName(), 80), ox + 14, y + 4, TEXT);
-            text(g, font.plainSubstrByWidth("from " + inv.inviter(), 70), ox + 14 + 82, y + 4, DIM);
+            text(g, font.plainSubstrByWidth(inv.teamName(), 62), ox + 14, y + 4, TEXT);
+            text(g, font.plainSubstrByWidth("from " + inv.inviter(), 74), ox + 14 + 66, y + 4, DIM);
             int px = ox + W - 14;
             int wNo = font.width("No") + 12, wYes = font.width("Accept") + 12;
             pill(g, px - wNo, y + 2, ROW - 6, "No", PLUM, () -> send(Net.DENY, "", 0, inv.team()));
