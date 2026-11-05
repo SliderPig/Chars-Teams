@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+authors="Char"
+modId="charteams"
+version="${file.jarVersion}"
+displayName="{C} Char's Teams"
+# Nobody has to have it: PCs without it can join a server with it, and PCs with it can join a server without it.
+displayTest="IGNORE_ALL_VERSION"
+description='''
+Make a team, invite your friends, see who's online. Just the team itself, no combat rules.
+U key opens the menu, /teams does the same in chat for anyone without the mod on their PC.
+Other mods can ask it who's on your team, like a map showing your teammates.
+'''
+
+[[dependencies.charteams]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.charteams]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.21)"
+ordering="NONE"
+side="BOTH"
